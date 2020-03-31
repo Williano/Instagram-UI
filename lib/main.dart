@@ -16,7 +16,7 @@ class InstagramUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: generateRoute,
-      initialRoute: HomeScreenRoute,
+      initialRoute: StartScreenRoute,
       theme: ThemeData.dark(),
     );
   }

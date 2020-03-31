@@ -11,6 +11,9 @@ class UndefinedScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("$name is Not Defined"),
       ),
+      body: Container(
+        color: Colors.white,
+      ),
     );
   }
 }

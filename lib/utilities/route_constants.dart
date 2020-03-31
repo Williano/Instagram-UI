@@ -1,2 +1,2 @@
-const String HomeScreenRoute = "/";
-const String UndefinedScreenRoute = "/notFound";
+const String StartScreenRoute = "/";
+const String HomeScreenRoute = "/home";

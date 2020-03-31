@@ -2,20 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/screens/home_screen.dart';
 import 'package:instagram_ui/screens/undefined_screen.dart';
 
-class AppBottomNavigationBarController extends StatefulWidget {
+class StartScreen extends StatefulWidget {
   @override
-  _AppBottomNavigationBarControllerState createState() =>
-      _AppBottomNavigationBarControllerState();
+  _StartScreenState createState() => _StartScreenState();
 }
 
-class _AppBottomNavigationBarControllerState
-    extends State<AppBottomNavigationBarController> {
+class _StartScreenState extends State<StartScreen> {
   final List<Widget> screens = [
+    HomeScreen(
+      key: PageStorageKey('Screen0'),
+    ),
     HomeScreen(
       key: PageStorageKey('Screen1'),
     ),
+    HomeScreen(
+      key: PageStorageKey('Screen2'),
+    ),
     UndefinedScreen(
-      key: PageStorageKey("Screen2"),
+      key: PageStorageKey("Screen3"),
+    ),
+    UndefinedScreen(
+      key: PageStorageKey("Screen4"),
     )
   ];
 
