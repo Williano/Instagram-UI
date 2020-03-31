@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/home_screen.dart';
+import 'package:instagram_ui/screens/undefined_screen.dart';
 import 'package:instagram_ui/utilities/route_constants.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
@@ -8,7 +10,10 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       break;
 
     default:
+      String name = routeSettings.arguments;
       return MaterialPageRoute(
-          builder: (BuildContext context) => UndefinedScreen());
+          builder: (BuildContext context) => UndefinedScreen(
+                name: name,
+              ));
   }
 }
