@@ -32,7 +32,57 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Icon(Icons.near_me)))
         ],
       ),
-      body: Container(),
+      body: ListView(
+        children: <Widget>[
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    width: 400,
+                    height: 80,
+                    decoration: BoxDecoration(
+                        color: Colors.red,
+                        border: Border(
+                            top: BorderSide(width: 2, color: Colors.black45))),
+                  )
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    width: 400,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        border: Border(
+                            top: BorderSide(width: 1, color: Colors.black38))),
+                  ),
+                  Container(
+                    width: 400,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        border: Border(
+                            top: BorderSide(width: 1, color: Colors.black38))),
+                  ),
+                  Container(
+                    width: 400,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        border: Border(
+                            top: BorderSide(width: 1, color: Colors.black38))),
+                  )
+                ],
+              ),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
