@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -8,6 +9,30 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        leading: GestureDetector(
+            onTap: () {
+              print("Camera");
+            },
+            child: Icon(Icons.camera_alt)),
+        title: Text(
+          "Instgram",
+          style: TextStyle(fontFamily: "instagram"),
+        ),
+        centerTitle: true,
+        actions: <Widget>[
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                  onTap: () {
+                    print("Messages");
+                  },
+                  child: Icon(Icons.near_me)))
+        ],
+      ),
+      body: Container(),
+    );
   }
 }
