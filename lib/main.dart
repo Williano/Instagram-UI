@@ -4,12 +4,10 @@ import 'package:instagram_ui/routes/router.dart';
 import 'package:instagram_ui/utilities/route_constants.dart';
 
 void main() {
-  // This app is designed only to work vertically, so we limit
-  // orientations to portrait up and down.
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-
-  runApp(InstagramUI());
+          [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+      .then((_) => runApp(InstagramUI()));
 }
 
 class InstagramUI extends StatelessWidget {
