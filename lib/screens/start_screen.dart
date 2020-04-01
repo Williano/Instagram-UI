@@ -27,17 +27,17 @@ class _StartScreenState extends State<StartScreen> {
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
-  int _currentTabIndex = 0;
+  int _currentTabIndex = 2;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageStorage(bucket: bucket, child: screens[_currentTabIndex]),
-      bottomNavigationBar: _bottomNavigationBar(_currentTabIndex),
+      bottomNavigationBar: _bottomNavigationBar(),
     );
   }
 
-  Widget _bottomNavigationBar(int _currentTabIndex) => BottomNavigationBar(
+  Widget _bottomNavigationBar() => BottomNavigationBar(
         currentIndex: _currentTabIndex,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
