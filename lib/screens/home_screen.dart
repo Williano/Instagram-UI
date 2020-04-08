@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Column(
             children: <Widget>[
               Container(
-                height: 70.0,
+                height: 75.0,
                 width: double.infinity,
                 child: ListView(
                   padding: EdgeInsets.only(
