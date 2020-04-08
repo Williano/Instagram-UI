@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               print("Camera");
             },
-            child: Icon(Icons.camera_alt)),
+            child: Icon(FontAwesomeIcons.camera)),
         title: Text(
           "Instgram",
           style: TextStyle(fontFamily: "instagram"),
@@ -30,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     print("Messages");
                   },
-                  child: Icon(Icons.near_me)))
+                  child: Icon(FontAwesomeIcons.paperPlane)))
         ],
       ),
       body: ListView(

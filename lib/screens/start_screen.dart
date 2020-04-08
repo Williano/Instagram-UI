@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_ui/screens/home_screen.dart';
 import 'package:instagram_ui/screens/undefined_screen.dart';
 
@@ -39,19 +41,29 @@ class _StartScreenState extends State<StartScreen> {
 
   Widget _bottomNavigationBar() => BottomNavigationBar(
         currentIndex: _currentTabIndex,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white38,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.home), title: SizedBox.shrink()),
+              icon: Icon(
+                Icons.home,
+                size: 29.0,
+              ),
+              title: SizedBox.shrink()),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search), title: SizedBox.shrink()),
+              icon: Icon(
+                Icons.search,
+                size: 29.0,
+              ),
+              title: SizedBox.shrink()),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add), title: SizedBox.shrink()),
+              icon: FaIcon(FontAwesomeIcons.plusSquare),
+              title: SizedBox.shrink()),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite), title: SizedBox.shrink()),
+              icon: Icon(FontAwesomeIcons.heart), title: SizedBox.shrink()),
           BottomNavigationBarItem(
-              icon: Icon(Icons.supervised_user_circle),
-              title: SizedBox.shrink())
+              icon: Icon(FontAwesomeIcons.user), title: SizedBox.shrink())
         ],
         onTap: (int index) {
           setState(
