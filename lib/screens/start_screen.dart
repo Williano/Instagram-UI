@@ -43,6 +43,7 @@ class _StartScreenState extends State<StartScreen> {
         currentIndex: _currentTabIndex,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white38,
+        backgroundColor: Colors.black54,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
