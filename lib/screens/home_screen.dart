@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:instagram_ui/widgets/gradient_arc_painter.dart';
+
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
   @override
@@ -20,8 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             child: Icon(FontAwesomeIcons.camera)),
         title: Text(
-          "Instgram",
-          style: TextStyle(fontFamily: "instagram"),
+          "Instagram",
+          style: TextStyle(fontFamily: 'Billabong', fontSize: 35),
         ),
         centerTitle: true,
         actions: <Widget>[
@@ -34,56 +36,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Icon(FontAwesomeIcons.paperPlane)))
         ],
       ),
-      body: ListView(
-        children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    width: 400,
-                    height: 80,
-                    decoration: BoxDecoration(
-                        color: Colors.red,
-                        border: Border(
-                            top: BorderSide(width: 2, color: Colors.black45))),
-                  )
-                ],
+      body: Center(
+        child: Container(
+          width: 100.0,
+          height: 100.0,
+          child: CustomPaint(
+            painter: GradientArcPainter(
+              startColor: Color(0xFFD2019A),
+              endColor: Color(0xFFFF662F),
+              width: 2.0,
+            ),
+            child: Center(
+              child: ClipRRect(
+                child: CircleAvatar(
+                  radius: 45,
+                  backgroundImage: AssetImage("assets/images/error.jpg"),
+                ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Container(
-                    width: 400,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        border: Border(
-                            top: BorderSide(width: 1, color: Colors.black38))),
-                  ),
-                  Container(
-                    width: 400,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        border: Border(
-                            top: BorderSide(width: 1, color: Colors.black38))),
-                  ),
-                  Container(
-                    width: 400,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        border: Border(
-                            top: BorderSide(width: 1, color: Colors.black38))),
-                  )
-                ],
-              ),
-            ],
-          )
-        ],
+            ),
+          ),
+        ),
       ),
     );
   }
