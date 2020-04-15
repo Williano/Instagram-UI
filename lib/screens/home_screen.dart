@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_ui/utilities/color_constants_utils.dart';
-import 'package:instagram_ui/widgets/stories.dart';
+import 'package:instagram_ui/widgets/post_widget.dart';
+import 'package:instagram_ui/widgets/stories_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -183,7 +184,8 @@ class _HomeScreenState extends State<HomeScreen> {
           Divider(
             thickness: 0.2,
             color: Colors.grey,
-          )
+          ),
+          Post(),
         ],
       ),
     );
