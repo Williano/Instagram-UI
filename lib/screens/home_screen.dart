@@ -185,7 +185,94 @@ class _HomeScreenState extends State<HomeScreen> {
             thickness: 0.2,
             color: Colors.grey,
           ),
-          Post(),
+          Post(
+              startColor: Color(startColorConst),
+              endColor: Color(endColorConst),
+              userProfileImage: "assets/images/art.jpg",
+              userLocation: "New York, USA",
+              totalLikes: "200,00 likes",
+              username: "Divinus",
+              post:
+                  "Less is better than More. Always be positive no matter what",
+              postImage: "assets/images/first_car.jpg",
+              totalComments: "2,233",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "24 minutes ago"),
+          SizedBox(
+            height: 15.0,
+          ),
+          Post(
+              userProfileImage: "assets/images/logo.jpg",
+              userLocation: "Conway, USA",
+              totalLikes: "200,00 likes",
+              username: "UCA",
+              post:
+                  "Less is better than More. Always be positive no matter what",
+              postImage: "assets/images/UCA_Sign.jpg",
+              totalComments: "2,233",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "3 hours ago"),
+          SizedBox(
+            height: 15.0,
+          ),
+          Post(
+              userProfileImage: "assets/images/error.jpg",
+              userLocation: "New York, USA",
+              totalLikes: "200 likes",
+              username: "Bill",
+              post:
+                  "Always be positive no matter what. Less is better than More.",
+              postImage: "assets/images/se.jpg",
+              totalComments: "2",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "4 hours ago"),
+          SizedBox(
+            height: 15.0,
+          ),
+          Post(
+              startColor: Color(startColorConst),
+              endColor: Color(endColorConst),
+              userProfileImage: "assets/images/design.jpg",
+              userLocation: "New York, USA",
+              totalLikes: "200,00 likes",
+              username: "Cristaino",
+              post:
+                  "Less is better than More. Always be positive no matter what",
+              postImage: "assets/images/education.jpg",
+              totalComments: "2,233",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "54 minutes ago"),
+          SizedBox(
+            height: 15.0,
+          ),
+          Post(
+              userProfileImage: "assets/images/se.jpg",
+              userLocation: "New York, USA",
+              totalLikes: "200,00 likes",
+              username: "Programming",
+              post:
+                  "Less is better than More. Always be positive no matter what",
+              postImage: "assets/images/programming.jpg",
+              totalComments: "2,233",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "3 hours ago"),
+          SizedBox(
+            height: 15.0,
+          ),
+          Post(
+              userProfileImage: "assets/images/logo.jpg",
+              userLocation: "Conway, USA",
+              totalLikes: "200,00 likes",
+              username: "UCA Soccer",
+              post:
+                  "Less is better than More. Always be positive no matter what",
+              postImage: "assets/images/TrackSoccer.jpg",
+              totalComments: "2,233",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "15 hours ago"),
+          SizedBox(
+            height: 15.0,
+          ),
         ],
       ),
     );
