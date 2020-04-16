@@ -20,7 +20,7 @@ class Post extends StatefulWidget {
       {this.startColor,
       this.endColor,
       @required this.userProfileImage,
-      @required this.userLocation,
+      this.userLocation,
       @required this.totalLikes,
       @required this.username,
       @required this.post,
