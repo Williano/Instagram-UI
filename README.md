@@ -51,7 +51,7 @@ To run this app, you will need to follow these 3 steps:
   $ git clone https://github.com/Williano/Instagram-UI.git
 
   # Go into the repository
-  $ cd Bona-Blog-Mobile
+  $ cd Instagram-UI
 
   # Install all dependences 
   $ flutter pub get
