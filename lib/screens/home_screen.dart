@@ -337,6 +337,16 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(
             height: 15.0,
           ),
+          Post(
+              userProfileImage: "assets/images/error2.jpg",
+              userLocation: "New York, USA",
+              totalLikes: "500,455 likes",
+              username: "Rock Band",
+              post: "Less is better than More.",
+              postImage: "assets/images/Entertainment.jpg",
+              totalComments: "44,003",
+              viewerProfileImage: "assets/images/Entertainment.jpg",
+              postTime: "2 hours ago"),
         ],
       ),
     );
