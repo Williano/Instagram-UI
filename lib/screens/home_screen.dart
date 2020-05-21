@@ -331,7 +331,7 @@ class _HomeScreenState extends State<HomeScreen> {
               username: "Rock Band",
               post: "",
               postImage: "assets/images/Entertainment.jpg",
-              totalComments: "344,003",
+              totalComments: "4,203",
               viewerProfileImage: "assets/images/Entertainment.jpg",
               postTime: "1 hour ago"),
           SizedBox(
