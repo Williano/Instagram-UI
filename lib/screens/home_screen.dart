@@ -328,7 +328,7 @@ class _HomeScreenState extends State<HomeScreen> {
               userProfileImage: "assets/images/error2.jpg",
               userLocation: "Texas, USA",
               totalLikes: "455 likes",
-              username: "Rock Band",
+              username: "Bill Rapo",
               post: "",
               postImage: "assets/images/Entertainment.jpg",
               totalComments: "4,203",
