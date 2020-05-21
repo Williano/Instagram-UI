@@ -329,7 +329,7 @@ class _HomeScreenState extends State<HomeScreen> {
               userLocation: "Texas, USA",
               totalLikes: "700,455 likes",
               username: "Rock Band",
-              post: "Less is better than More.",
+              post: "",
               postImage: "assets/images/Entertainment.jpg",
               totalComments: "344,003",
               viewerProfileImage: "assets/images/Entertainment.jpg",
