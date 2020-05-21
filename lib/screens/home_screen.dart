@@ -327,7 +327,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Post(
               userProfileImage: "assets/images/error2.jpg",
               userLocation: "Texas, USA",
-              totalLikes: "700,455 likes",
+              totalLikes: "455 likes",
               username: "Rock Band",
               post: "",
               postImage: "assets/images/Entertainment.jpg",
