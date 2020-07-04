@@ -4,8 +4,8 @@ A clone of the Instagram iOS App.
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies](#technologies)
 * [Features](#features)
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -22,15 +22,16 @@ A clone of the Instagram iOS App using Flutter.
  :-------------------------:|:-------------------------:
 ![feed1](https://user-images.githubusercontent.com/19711677/79414941-9c633200-7f71-11ea-9898-86cf951d54d6.png)|![feed2](https://user-images.githubusercontent.com/19711677/79414938-9a00d800-7f71-11ea-9f66-6cd587594e8a.png)
 
-  
-## Technologies
-* Dart
-* Flutter
 
 ## Features
 * Feed Screen
 * User Profile Screen
 * Activitiy Screen
+
+## Technologies
+* Dart
+* Flutter
+
 
 ## Setup
 To run this app, you will need to follow these 3 steps:
